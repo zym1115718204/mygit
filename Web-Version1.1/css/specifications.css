@@ -1,0 +1,226 @@
+/*******************************
+            Global    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+*******************************/
+
+html,
+body {
+  font-size: 15px;
+  height: 100%;
+  background-color:#FFF;	
+		
+  font-family:"微软雅黑","Microsoft YaHei","Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: #555555;
+  text-rendering: optimizeLegibility;
+  min-width: 320px;
+	
+	
+  word-wrap:break-word;
+  behavior:url("csshover.htc");
+
+  
+}
+
+
+
+/*******************************
+          UI Overrides
+*******************************/
+
+.ui.header {
+  font-family:"微软雅黑","Microsoft YaHei","Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ui.header,
+h1,
+h2 {
+  font-weight: normal !important;
+}
+
+h1.ui.header {
+  font-size: 3em;
+}
+
+h4.ui.header,
+h5.ui.header,
+.ui.icon.header {
+  font-weight: bold !important;
+}
+
+.ui.button {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color:#34a3e3;
+}
+
+p a {
+  font-weight: bold;
+}
+.product{
+  border-bottom:1px solid #ddd;	
+}
+/*******************************
+            Global
+*******************************/
+
+
+/****************************************************************************************************************************
+            mydoin.end
+			
+	//.top_menu{		
+	background-color: rgba(255, 255, 255, 1);
+	background-color: #fff \9;}
+****************************************************************************************************************************/
+.first.ui.menu{
+	background:transparent;
+	position:fixed;
+	z-index:100;
+	width:100%;
+	top:0;
+}
+.top-menu{
+	background:transparent;
+	padding: 0 0 0 0;
+	width: 100%;
+	text-align: center;
+	line-height: 18px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	border-bottom:1px solid #ddd;
+	
+}
+.menu-list{
+	padding: 8px 150px 5px 0;
+	height: 34px;
+	line-height: 32px;
+
+
+}
+.menu-logo{
+    padding: 5px 0 7px 0;
+	float:left;
+    height: 34px;
+}
+.top-menu a{
+	padding: 0 30px ;
+	display: inline-block;
+	color: #888888;
+	font-size: 14px;
+	line-height: 32px;
+	vertical-align: top;
+	-webkit-transition: color .2s linear;
+	
+}
+a.active{
+	color:#34a3e3;
+}
+a:hover {
+    color:#34a3e3;
+}
+
+.ui.center.aligned.image{
+	background-color:#FeFeFe;
+	
+}
+
+/********************************
+         specifications
+********************************/
+
+/********************************
+            mydoin.end
+********************************/
+.menu .right.menu > .mobile.item {
+  display: none;
+}
+
+.ui.page.grid.segment {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color:#fff;
+  color:#393939;	
+}	
+
+
+/*******************************
+          Responsive
+*******************************/
+
+/* Mobile Only */
+
+@media only screen and (max-width : 768px) {
+  .ui.page.grid.segment {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .menu .right.menu > .item {
+    display: none;
+  }
+
+  .menu .right.menu > .mobile.item {
+    display: block;
+  }
+
+  h1.ui.header {
+    font-size: 1.5em;
+  }
+
+  .masthead.segment {
+    -webkit-background-size: auto;
+    background-size: auto;
+  }
+
+  .masthead.segment .information {
+    margin-left: 190px;
+  }
+
+  .masthead.segment .image {
+    bottom: -65px;
+    width: 150px;
+  }
+
+  .masthead.segment .button {
+    font-size: 1rem;
+  }
+
+  .overview .divided.grid .header .icon {
+    font-size: 1.5em;
+  }
+
+  .overview .divided.grid .header + p {
+    min-height: 0px;
+  }
+
+  .masthead.segment .column {
+    font-size: 0.7rem;
+  }
+
+  .masthead.segment .column p {
+    display: none;
+  }
+
+  .selection.list .right.floated {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 1000px) {
+
+}
