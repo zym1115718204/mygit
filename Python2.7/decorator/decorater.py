@@ -1,5 +1,5 @@
 #!usr/bin/env python
-# -*-coding:utf-8-*-
+# -*- coding:utf-8 -*-
 
 #装饰器decorator
 
@@ -11,15 +11,30 @@ def log1(func):
     return wrapper
 
 #定义有参数的decorator
-def log2(text):
+def log2(text=''):
     def decorator(func):
         def wrapper(*args,**kw):
-            print '%s,call %s()' %(text,func.__name__)
+            print '%s call %s()' %(text,func.__name__)
             return func(*args,**kw)
         return wrapper
     return decorator
 
-@log2('Hello')
+#定义有参数的decorator,前后打印
+def log3(text=''):
+    def decorator(func):
+        def wrapper(*args,**kw):
+            print 'Begin print......'                 #调用前打印
+            if text == '':
+                print 'Call %s()' %func.__name__
+            else:
+                print '%s,call %s()' %(text,func.__name__)
+            result = func(*args,**kw)
+            print 'End print......'                   #调用后打印
+            return result
+        return wrapper
+    return decorator
+
+@log3('Hello')
 def now():
     print '2016.4.11'
 
